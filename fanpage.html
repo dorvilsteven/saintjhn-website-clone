@@ -1,0 +1,413 @@
+<!-- Steven Dorvil -->
+<!-- assignment 1   -->
+<!-- HTML fanpage -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAINt JHN || Steven Dorvil assignment 2.3.2</title>
+    <script src="https://kit.fontawesome.com/cd527d8368.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: auto;
+            padding: auto;
+            box-sizing: border-box;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: magenta;
+        }
+
+        .nav {
+            display: flex;
+            flex-flow: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        .nav .nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 2em;
+        }
+
+        .nav .nav-list .nav-list-item {
+            display: inline;
+            padding: 0.5em;
+        }
+
+        #Tour {
+            color: lightblue;
+            padding-left: 10%;
+            font-size: 0.8em;
+            text-decoration: line-through;
+        }
+
+        table tr td {
+            text-align: start;
+        }
+
+        .cancel {
+            color: orange;
+            font-size: 1.2em;
+        }
+
+        #Merch {
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-around;
+        }
+
+        .product-image {
+            width: 16em;
+        }
+
+        #Connect {
+            background-image: url(./banner-2.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        .connect-content {
+            font-size: 0.6em;
+            padding-top: 93vh;
+        }
+
+        .connect-content-main {
+            margin: 0;
+        }
+
+        .social-content .social {
+            background-color: grey;
+            border: grey;
+            border-radius: 25px;
+            padding: 0.3em;
+            margin: 0.2em;
+        }
+
+        .footer-content {
+            font-size: 0.7em;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fanpage navigation -->
+    <nav class="nav">
+        <h1 style="margin:auto;">SAINt JHN</h1>
+        <img src="https://i.pinimg.com/originals/7e/b0/72/7eb072a20ae93b2f9f809174c43d5821.png" alt="SAINt-JHN-Logo"
+            style="margin:auto; width: 12em;">
+        <ul class="nav-list">
+            <li class="nav-list-item"><a href="#Music" class="list-link">Music</a></li>
+            <li class="nav-list-item"><a href="#Tour" class="list-link">Tour</a></li>
+            <li class="nav-list-item"><a href="#Merch" class="list-link">Merch</a></li>
+            <li class="nav-list-item"><a href="#Connect" class="list-link">Connect</a></li>
+        </ul>
+    </nav>
+    <!-- Fanpage Music -->
+    <section id="Music">
+        <div class="music-album">
+            <a href="https://www.youtube.com/watch?v=hmMPB9U_QMU&list=OLAK5uy_moyVOzNXNKibQE03OWgLVRn_AHlKgIKz4"
+                target="_blank">
+                <img src="https://media.pitchfork.com/photos/5fb557cb4cb304ce01ca1306/1:1/w_600/While%20The%20World%20Was%20Burning_SAINt%20JHN.jpg"
+                    alt="album cover">
+            </a>
+        </div>
+        <div class="music-album">
+            <a href="https://www.youtube.com/watch?v=bu7E2Y_GfVM&list=OLAK5uy_kjNT71tt2LxAXdvnz71b3HSZagKzLZ-sQ"
+                target="_blank">
+                <img src="https://static.hiphopdx.com/2019/08/saint-jhn-ghetto-lenny-love-songs-600x600.jpeg"
+                    alt="album cover">
+            </a>
+        </div>
+        <div class="music-album">
+            <a href="https://www.youtube.com/watch?v=N8Ykxh9n5Hg&list=OLAK5uy_lIFmxZm06Q_Wa18IU9dcT5up19Dfja9PI"
+                target="_blank">
+                <img src="https://media.pitchfork.com/photos/5abd4757f131ec63502c4c26/1:1/w_600/saintjhncollection1.JPG"
+                    alt="album cover">
+            </a>
+        </div>
+    </section>
+    <!-- Fanpage tour -->
+    <section id="Tour">
+        <table class="tour-dates" style="width: 100%;">
+            <tr>
+                <td>FEB 06</td>
+                <td>OLSO, NO</td>
+                <td>PARKTEATRET</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 07</td>
+                <td>COPENHAGEN, DK</td>
+                <td>PUMPEHUSET</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 09</td>
+                <td>STOCKHOLM, SE</td>
+                <td>DEBASER STRAND</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 11</td>
+                <td>BERLIN, GER</td>
+                <td>LIDO</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 12</td>
+                <td>COLOGNE, GER</td>
+                <td>CBE</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 14</td>
+                <td>MILAN, IT</td>
+                <td>MAGZZINI GENERALI</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 15</td>
+                <td>OLSO, NO</td>
+                <td>EXIL ZURICH</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 18</td>
+                <td>PARIS, FR</td>
+                <td>TRABENDO LA BELLEVILLOISE</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 06</td>
+                <td>OLSO, NO</td>
+                <td>PARKTEATRET</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 07</td>
+                <td>COPENHAGEN, DK</td>
+                <td>PUMPEHUSET</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 09</td>
+                <td>STOCKHOLM, SE</td>
+                <td>DEBASER STRAND</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 11</td>
+                <td>BERLIN, GER</td>
+                <td>LIDO</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 12</td>
+                <td>COLOGNE, GER</td>
+                <td>CBE</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 14</td>
+                <td>MILAN, IT</td>
+                <td>MAGZZINI GENERALI</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 15</td>
+                <td>OLSO, NO</td>
+                <td>EXIL ZURICH</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 18</td>
+                <td>PARIS, FR</td>
+                <td>TRABENDO LA BELLEVILLOISE</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 06</td>
+                <td>OLSO, NO</td>
+                <td>PARKTEATRET</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 07</td>
+                <td>COPENHAGEN, DK</td>
+                <td>PUMPEHUSET</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 09</td>
+                <td>STOCKHOLM, SE</td>
+                <td>DEBASER STRAND</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 11</td>
+                <td>BERLIN, GER</td>
+                <td>LIDO</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 12</td>
+                <td>COLOGNE, GER</td>
+                <td>CBE</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 14</td>
+                <td>MILAN, IT</td>
+                <td>MAGZZINI GENERALI</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 15</td>
+                <td>OLSO, NO</td>
+                <td>EXIL ZURICH</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+            <tr>
+                <td>FEB 18</td>
+                <td>PARIS, FR</td>
+                <td>TRABENDO LA BELLEVILLOISE</td>
+                <td class="cancel">POSTPONED</td>
+            </tr>
+        </table>
+    </section>
+    <!-- Fanpage merch -->
+    <section id="Merch">
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/2118/4487/products/SAINT-JHN-GLLS-ITEM-STAFF-HOODIE-BLACK-2.png?v=1568927334"
+                alt="Product-image-aweb8b38" class="product-image">
+            <h4 class="product-title">T-shirt name - Color</h4>
+            <p class="price">$60.00</p>
+            <input list="Size" name="product-size" placeholder="Choose Size">
+            <datalist id="Size">
+                <option value="xs">
+                <option value="s">
+                <option value="m">
+                <option value="l">
+                <option value="xl">
+                <option value="xxl">
+            </datalist>
+            <button>Sold Out</button>
+        </div>
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/2118/4487/products/SAINT-JHN-GLLS-ITEM-STAFF-HOODIE-WHITE-2.png?v=1568927365"
+                alt="Product-image-aweb8b38" class="product-image">
+            <h4 class="product-title">T-shirt name - Color</h4>
+            <p class="price">$60.00</p>
+            <input list="Size" name="product-size" placeholder="Choose Size">
+            <datalist id="Size">
+                <option value="xs">
+                <option value="s">
+                <option value="m">
+                <option value="l">
+                <option value="xl">
+                <option value="xxl">
+            </datalist>
+            <button>Sold Out</button>
+        </div>
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/2118/4487/products/SAINT-JHN-GLLS-ITEM-STAFF-SWEATSHIRT-BLACK_580x870.png?v=1569371824"
+                alt="Product-image-aweb8b38" class="product-image">
+            <h4 class="product-title">T-shirt name - Color</h4>
+            <p class="price">$60.00</p>
+            <input list="Size" name="product-size" placeholder="Choose Size">
+            <datalist id="Size">
+                <option value="xs">
+                <option value="s">
+                <option value="m">
+                <option value="l">
+                <option value="xl">
+                <option value="xxl">
+            </datalist>
+            <button>Sold Out</button>
+        </div>
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/2118/4487/products/SAINT-JHN-GLLS-ITEM-STAFF-SWEATSHIRT-WHITE_580x870.png?v=1569371018"
+                alt="Product-image-aweb8b38" class="product-image">
+            <h4 class="product-title">T-shirt name - Color</h4>
+            <p class="price">$60.00</p>
+            <input list="Size" name="product-size" placeholder="Choose Size">
+            <datalist id="Size">
+                <option value="xs">
+                <option value="s">
+                <option value="m">
+                <option value="l">
+                <option value="xl">
+                <option value="xxl">
+            </datalist>
+            <button>Sold Out</button>
+        </div>
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/2118/4487/products/SAINT-JHN-IGNORANT-ITEM-Tour-Tee-Black_580x870.png?v=1568832218"
+                alt="Product-image-aweb8b38" class="product-image">
+            <h4 class="product-title">T-shirt name - Color</h4>
+            <p class="price">$60.00</p>
+            <input list="Size" name="product-size" placeholder="Choose Size">
+            <datalist id="Size">
+                <option value="xs">
+                <option value="s">
+                <option value="m">
+                <option value="l">
+                <option value="xl">
+                <option value="xxl">
+            </datalist>
+            <button>Sold Out</button>
+        </div>
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/2118/4487/products/SAINT-JHN-IGNORANT-ITEM-Tour-Tee-White_580x870.png?v=1568710480"
+                alt="Product-image-aweb8b38" class="product-image">
+            <h4 class="product-title">T-shirt name - Color</h4>
+            <p class="price">$60.00</p>
+            <input list="Size" name="product-size" placeholder="Choose Size">
+            <datalist id="Size">
+                <option value="xs">
+                <option value="s">
+                <option value="m">
+                <option value="l">
+                <option value="xl">
+                <option value="xxl">
+            </datalist>
+            <button>Sold Out</button>
+        </div>
+    </section>
+    <!-- Fanpage footer -->
+    <section id="Connect">
+        <div class="connect-content">
+            <p class="connect-content-main"><a href="#">CONTACT</a> | <a href="#">FAQ</a></p>
+            <div class="social-content">
+                <i class="fab fa-instagram social"></i>
+                <i class="fab fa-youtube social"></i>
+                <i class="fab fa-facebook social"></i>
+                <i class="fab fa-twitter social"></i>
+                <i class="fab fa-soundcloud social"></i>
+            </div>
+            <p class="footer-content">GODD COMPLEXx</p>
+        </div>
+    </section>
+</body>
+
+</html>
